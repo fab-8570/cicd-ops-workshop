@@ -1,0 +1,7 @@
+# list all files and directories to ignore in the Docker build context
+.git
+.github
+**/__pycache__
+model/
+tests/
+**/*.md
