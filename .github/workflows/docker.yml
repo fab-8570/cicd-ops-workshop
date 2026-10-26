@@ -28,8 +28,6 @@ jobs:
       - name: Show the files in the image
         run: docker run --rm "$IMAGE:$GITHUB_SHA" find . \( -name .git -o -name __pycache__ \) -prune -print -o -print
       # TODO (Task 2): log in to the registry, tag the image with the branch name, and push both tags.
-  needs: lint
-
 
   # TODO (Task 3): train the model with the new image, once it is pushed.
   # train:
