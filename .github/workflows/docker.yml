@@ -36,7 +36,7 @@ jobs:
           docker push "$IMAGE:$GITHUB_SHA"
           docker push "$IMAGE:$GITHUB_REF_NAME"
 
-  TODO (Task 3): train the model with the new image, once it is pushed.
+  # TODO (Task 3): train the model with the new image, once it is pushed.
   train:
     needs: build
     uses: ./.github/workflows/train-docker.yml
